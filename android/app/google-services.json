@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "197761459040",
+    "project_id": "horse-bettings",
+    "storage_bucket": "horse-bettings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197761459040:android:1c570567e4782379017405",
+        "android_client_info": {
+          "package_name": "com.horseracing.betting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTMRjsJiK8pMA-9RGS1wgNSHwcjKKgOis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

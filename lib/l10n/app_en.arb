@@ -1,0 +1,38 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "The language of the app"
+  },
+  "premiumScreenTitle": "Premium Tips",
+  "subscribe": "Subscribe",
+  "restoreSubscription": "Restore Subscription",
+  "freeTitle": "Free Tips",
+  "premiumTitle": "Premium Tips",
+  "oldTips": "Past Picks",
+  "cardLig": "League",
+  "cardTime": "Time",
+  "cardRate": "Rate",
+  "navFree": "Free Tips",
+  "navPre": "Premium Tips",
+  "navOld": "Old Tips",
+  "premiumOz": "Premium Features",
+  "premiumBir": "- Special Race Predictions",
+  "premiumIki": "- High Odds Races",
+  "premiumUc": "- Simple Interface",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfUse": "Terms Of Use",
+  "analysisInfo": "Analysis Info",
+  "analysisDesc": "Analysis Desciption",
+  "analysis": "Analysis",
+  "horseJockeyDetails": "Detail Horse",
+  "win": "wins",
+  "lose": "Losses",
+  "last5Matches": "Last 5 Races",
+  "winLoseRatio": "Overall Win/Lose Ratio",
+  "yarisSiralama": "Sorting",
+  "toplamYaris": "Total Race"
+
+
+
+ 
+}

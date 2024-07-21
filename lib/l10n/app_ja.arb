@@ -1,0 +1,42 @@
+ {
+  "language": "Japanese",
+  "@language": {
+    "description": "アプリの言語"
+  },
+  "premiumScreenTitle": "プレミアム・ヒント",
+  "subscribe": "サブスクライブ",
+  "restoreSubscription": "ブスクリプションの復元",
+  "freeTitle": "無料ヒント",
+  "premiumTitle": "プレミアム・ヒント",
+  "oldTips": "過去のピックアップ",
+  "cardLig": "同盟",
+  "cardTime": "時間",
+  "cardRate": "レート",
+  "navFree": "無料のヒント",
+  "navPre": "プレミアムヒント",
+  "navOld": "古いヒント",
+  "premiumOz": "プレミアム機能",
+  "premiumBir": "- 特別レース予想",
+  "premiumIki": "- 高オッズレース",
+  "premiumUc": "- シンプルなインターフェース",
+  "privacyPolicy": "プライバシーポリシー",
+  "termsOfUse": "利用規約",
+  "analysisInfo": "分析情報",
+  "analysisDesc": "分析の説明",
+  "analysis": "分析",
+  "horseJockeyDetails": "ディテールホース",
+  "win": "勝利",
+  "lose": "損失",
+  "last5Matches": "直近の5レース",
+  "winLoseRatio": "総合勝敗率",
+  "yarisSiralama": "ランキング",
+  "toplamYaris": " 総レース"
+ 
+  
+
+
+
+
+ 
+}
+
