@@ -5,7 +5,9 @@ import 'package:horse_betting/main.dart'; // Import your main.dart file
 import 'package:horse_betting/pages/analiz_bilgi.dart';
 import 'package:horse_betting/pages/bahisekrani.dart';
 import 'package:horse_betting/pages/gecmisbahis.dart';
+import 'package:horse_betting/pages/macyukele.dart';
 import 'package:horse_betting/pages/premium.dart';
+import 'package:horse_betting/pages/transparancy.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
@@ -22,15 +24,17 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _screens = [
     BahisEkrani(),
-    //MacYuklemeEkrani(),
     PremiumEkrani(),
     GecmisBahis(),
-    AnalizEkrani()
+    AnalizEkrani(),
+    MacYuklemeEkrani()
   ];
 
   @override
   void initState() {
+    initPlugin(context);  
     super.initState();
+    
     _handleInitialScreen();
   }
 
@@ -113,6 +117,7 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.star), label: AppLocalizations.of(context)!.premiumTitle),
           BottomNavigationBarItem(icon: Icon(Icons.history), label: AppLocalizations.of(context)!.oldTips),
           BottomNavigationBarItem(icon: Icon(Icons.analytics), label: AppLocalizations.of(context)!.analysis,),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'ADdd'),
 
         ],
       ),

@@ -48,6 +48,7 @@ dependencies:
   rflutter_alert: ^2.0.7
   percent_indicator: ^4.2.3
   lottie: ^2.3.1  # Or the latest version
+  app_tracking_transparency: ^2.0.2+4
 
  
 

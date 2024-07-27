@@ -5,6 +5,9 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:rflutter_alert/rflutter_alert.dart'; 
 
 class BahisEkrani extends StatefulWidget {
+
+
+
   @override
   _BahisEkraniState createState() => _BahisEkraniState();
 }
@@ -17,7 +20,9 @@ class _BahisEkraniState extends State<BahisEkrani> {
   void initState() {
     super.initState();
     init();
-    _tahminlerStream = _firestore.collection('tahminler').snapshots();
+    _tahminlerStream = _firestore.collection('tahminler')
+    .where('goster', isEqualTo: 1)
+    .snapshots();
   }
 
    init() async {

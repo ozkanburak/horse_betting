@@ -3,6 +3,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart'; 
 
 class GecmisBahis extends StatefulWidget {
+
+
+
   @override
   _GecmisBahisState createState() => _GecmisBahisState();
 }
@@ -14,7 +17,9 @@ class _GecmisBahisState extends State<GecmisBahis> {
   @override
   void initState() {
     super.initState();
-    _tahminlerStream = _firestore.collection('gecmis').snapshots();
+    _tahminlerStream = _firestore.collection('tahminler')
+    .where('goster', isEqualTo: 0)
+    .snapshots();
   }
 
   @override

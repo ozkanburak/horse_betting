@@ -13,6 +13,8 @@ import 'package:purchases_ui_flutter/purchases_ui_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart'; 
 import 'package:url_launcher/url_launcher.dart';
 
+//ca-app-pub-3610454142571657/2098946770
+//ca-app-pub-3610454142571657~6144372686
 
 
 //ADs
@@ -24,7 +26,9 @@ bool _isAdLoadingComplete = false;
 
 void loadAppOpenAd() {
   AppOpenAd.load(
-    adUnitId: 'ca-app-pub-8119028412103413/3722229648', 
+    adUnitId: Platform.isAndroid
+        ? 'ca-app-pub-3610454142571657/2098946770'
+        : 'ca-app-pub-3610454142571657/2098946770',
     request: const AdRequest(),
     adLoadCallback: AppOpenAdLoadCallback(
       onAdLoaded: (ad) {
@@ -33,17 +37,15 @@ void loadAppOpenAd() {
           onAdDismissedFullScreenContent: (ad) {
             appOpenAd = null;
             _isShowingAd = false;
+            _configureSDK(); // Reklam kapatıldığında paywall'u göster
           },
         );
 
-        // Ad loading is complete, show paywall if ad not available
-        _isAdLoadingComplete = true;
-        _showPaywallIfNeeded(); 
+        _showAdIfAvailable(); // Reklam yüklenince hemen göster
       },
       onAdFailedToLoad: (error) {
         print('AppOpenAd failed to load: $error');
-        _isAdLoadingComplete = true;
-        _showPaywallIfNeeded();
+        _showPaywallIfNeeded(); // Reklam yüklenemezse paywall'u göster
       },
     ),
   );
